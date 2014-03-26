@@ -1,0 +1,14 @@
+<div class="shout">
+  <div class="author">
+    <span class="email">
+      <%= shout.user.email %>
+    </span>
+    <span class="time">
+      <%= time_ago_in_words(shout.created_at) %> ago
+    </span>
+    <div class="body">
+      <%= shout.body %>
+    </div>
+    <button class="destroy"></button>
+  </div>
+</div>

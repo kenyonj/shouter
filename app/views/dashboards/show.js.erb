@@ -1,0 +1,8 @@
+var template = "<%= j render(@shouts) %>";
+$("#shouts").append(template);
+
+<% if @shouts.last_page? %>
+  $("#next_page").remove();
+<% else %>
+  $("#next_page").replaceWith("<%= j link_to_next_page @shouts, "Load more...", remote: true, id: "next_page" %>");
+<% end %>

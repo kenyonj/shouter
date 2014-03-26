@@ -1,0 +1,11 @@
+Dashboard
+
+<%= form_for(@shout, remote: true) do |form| %>
+  <%= form.text_field :body, placeholder: "Shout here" %>
+  <%= form.submit "Shout" %>
+<% end %>
+
+<div id="shouts">
+  <%= render @shouts %>
+</div>
+<%= link_to_next_page @shouts, "Load more...", remote: true, id: "next_page" %>
