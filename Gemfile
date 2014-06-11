@@ -12,7 +12,6 @@ gem 'clearance'
 gem 'bourbon'
 gem 'neat'
 gem 'kaminari'
-gem 'thin'
 
 group :doc do
   gem 'sdoc', require: false
